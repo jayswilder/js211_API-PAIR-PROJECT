@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokemon Arena</title>
+  </head>
+
+  <body>
+    <h1>Choose Your Pokemon!</h1>
+
+    <!-- Choose your pokemon area with 6 pokeballs to choose from - Water - Fire - Grass - Electric - Psychic - Ghost -->
+    <div id="choosePokemonContainer">
+<!--       
+        ===============
+        ==== WATER ====
+        =============== -->
+
+        <div id="waterPokemon">
+        <button id="waterTypeButton" onclick="fetchWaterPokemonData()">
+          <img
+            src="./img/Pokeball.png"
+            alt="Picture of pokeball. Color red on top, color white on bottom, with a black strip in the center like a belt."
+          />
+        </button>
+
+        <h3>Water Type</h3>
+      </div>
+
+<!--       
+        ==============
+        ==== FIRE ====
+        ============== -->
+
+      <div id="firePokemon">
+        <button id="fireTypeButton" onclick="fetchFirePokemonData()">
+          <img
+            src="./img/Pokeball.png"
+            alt="Picture of pokeball. Color red on top, color white on bottom, with a black strip in the center like a belt."
+          />
+        </button>
+
+        <h3>Fire Type</h3>
+      </div>
+
+<!--       
+        ===============
+        ==== GRASS ====
+        =============== -->
+
+      <div id="grassPokemon">
+        <button id="grassTypeButton" onclick="fetchGrassPokemonData()">
+          <img
+            src="./img/Pokeball.png"
+            alt="Picture of pokeball. Color red on top, color white on bottom, with a black strip in the center like a belt."
+          />
+        </button>
+
+        <h3>Grass Type</h3>
+      </div>
+
+<!--       
+        ==================
+        ==== ELECTRIC ====
+        ================== -->
+
+      <div id="electricPokemon">
+        <button id="electricTypeButton" onclick="fetchElectricPokemonData()">
+          <img
+            src="./img/Pokeball.png"
+            alt="Picture of pokeball. Color red on top, color white on bottom, with a black strip in the center like a belt."
+          />
+        </button>
+
+        <h3>Electric Type</h3>
+      </div>
+
+      <!--       
+        =================
+        ==== PSYCHIC ====
+        ================= -->
+
+      <div id="psychicPokemon">
+        <button id="psychicTypeButton" onclick="fetchPsychicPokemonData()">
+          <img
+            src="./img/Pokeball.png"
+            alt="Picture of pokeball. Color red on top, color white on bottom, with a black strip in the center like a belt."
+          />
+        </button>
+
+        <h3>Psychic Type</h3>
+      </div>
+
+<!--       
+        ===============
+        ==== GHOST ====
+        =============== -->
+
+      <div id="ghostPokemon">
+        <button id="ghostTypeButton" onclick="fetchGhostPokemonData()">
+          <img
+            src="./img/Pokeball.png"
+            alt="Picture of pokeball. Color red on top, color white on bottom, with a black strip in the center like a belt."
+          />
+        </button>
+
+        <h3>Ghost Type</h3>
+      </div>
+    </div>
+
+
+    <!-- ===== CONTAINER TO HOLD ALL BATTLE INFORMATION AND PHOTOS -->
+
+    <div id="battle-container">
+      <button id="findEnemyPokemon" onclick="fetchEnemyPokemonData()">
+        Find New Opponent
+      </button>
+      <button id="findUserPokemon" onclick="startBattle()">
+        Battle!
+      </button>
+      <!-- Area to display to battle another random pokemon -->
+      <div id="battleScene">
+        <!-- area for the users chosen pokemon -->
+
+        <div id="userPokemon">
+          <div id="userSprite"></div>
+          <div id="user">
+            <div>
+              <h2 id="userName"></h2>
+              <p id="userType"></p>
+            </div>
+            <div id="userStats">
+              <div>
+                <p id="userHp"></p>
+                <p id="userAttack"></p>
+                <p id="userDefense"></p>
+              </div>
+              <div>
+                <p id="userSpecialAttack"></p>
+                <p id="userSpecialDefense"></p>
+                <p id="userSpeed"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- area for the enemy generated pokemon -->
+
+        <div id="enemyPokemon">
+          <div id="enemy">
+            <div>
+              <h2 id="enemyName"></h2>
+              <p id="enemyType"></p>
+            </div>
+            <div id="enemyStats">
+              <div>
+                <p id="enemyHp"></p>
+                <p id="enemyAttack"></p>
+                <p id="enemyDefense"></p>
+              </div>
+              <div>
+                <p id="enemySpecialAttack"></p>
+                <p id="enemySpecialDefense"></p>
+                <p id="enemySpeed"></p>
+              </div>
+            </div>
+          </div>
+          <div id="enemySprite"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/user-fire.js"></script>
+    <script src="./js/user-water.js"></script>
+    <script src="./js/user-grass.js"></script>
+    <script src="./js/user-electric.js"></script>
+    <script src="./js/user-psychic.js"></script>
+    <script src="./js/user-ghost.js"></script>
+    <script src="./js/enemy.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
