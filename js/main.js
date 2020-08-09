@@ -45,7 +45,7 @@ const startBattle = () => {
             alert(`${enemyPokemon} is too tough! You narrowly escaped this one!`)
         }
         if (enemyDefenseSum > userAttackSum && enemySpeed < userSpeed || userAttackSum >= enemyDefenseSum && userSpeed <= enemySpeed) {
-            alert(`${userPokemon} and ${enemyPokemon} are so powerful! This battle is too close to call! It's up their Pokemon Trainers now...`)
+            alert(`${userPokemon} and ${enemyPokemon} are so powerful! This battle is too close to call! It's up to their Pokemon Trainers now...`)
         }
     }
 
