@@ -51,5 +51,4 @@ const startBattle = () => {
 
     fetchBattlePokemonData();
     window.setTimeout(fetchEnemyPokemonData, 2000);
-
 }

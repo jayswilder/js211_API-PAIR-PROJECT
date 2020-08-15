@@ -19,7 +19,7 @@ async function fetchGhostPokemonData() {
         // console.log(json)
         const pokemonSprite = json.sprites.front_default
         const pokemonName = json.name
-        console.log(pokemonName)
+        // console.log(pokemonName)
         const pokemonHp = json.stats[0].base_stat
         const pokemonType = json.types.map(type => { return type.type.name }).join(' - ')
         const pokemonAttack = json.stats[1].base_stat

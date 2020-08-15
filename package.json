@@ -1,0 +1,23 @@
+{
+  "name": "js211_API-PAIR-PROJECT",
+  "version": "1.0.0",
+  "description": "Create a pokemon battle arena",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayswilder/js211_API-PAIR-PROJECT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayswilder/js211_API-PAIR-PROJECT/issues"
+  },
+  "homepage": "https://github.com/jayswilder/js211_API-PAIR-PROJECT#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
